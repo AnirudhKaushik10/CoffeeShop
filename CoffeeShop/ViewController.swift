@@ -11,8 +11,20 @@ class ViewController: UIViewController {
     let secondLabel = UILabel()
     var imageView = UIImageView()
     
+    let userDefaults = UserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let date = userDefaults.value(forKey: "dateArray") as? Array<String> {
+            dateArray = date
+        }
+        
+        if let order = userDefaults.value(forKey: "orderArray") as? Array<Array<String>> {
+            orderArray = order
+        }
+        
+        
         loadSubViews()
         adjustSize()
         addConstraints()
@@ -145,6 +157,8 @@ extension ViewController: submitOrderDelegate {
         if order.count > 0 {
             dateArray.append(date)
             orderArray.append(order)
+            userDefaults.set(dateArray, forKey: "dateArray")
+            userDefaults.set(orderArray, forKey: "orderArray")
             print(dateArray)
             print(orderArray)
         }
