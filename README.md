@@ -4,17 +4,17 @@ Simple CoffeeShop app for ordering drinks from the menu.
 
 ## Files Information
 
-ViewController - Main Screen ViewController\
+**ViewController** - Main Screen ViewController\
 \
-PlaceOrderViewController - Shows currently selected drinks and add more drinks from the menu\
+**PlaceOrderViewController** - Shows currently selected drinks and add more drinks from the menu\
 \
-AddItemViewController - Shows the menu, implemented as 2 column UICollectionView\
+**AddItemViewController** - Shows the menu, implemented as 2 column UICollectionView\
 \
-MenuCollectionViewCell - Defines the cell to be used by AddItemViewContoller's UICollectionView\
+**MenuCollectionViewCell** - Defines the cell to be used by AddItemViewContoller's UICollectionView\
 \
-OrderTableView - Shows history of all orders placed, implemented as TableViewController\
+**OrderTableView** - Shows history of all orders placed, implemented as TableViewController\
 \
-CardCell - Defines the cell to be used by the OrderTableView\
+**CardCell** - Defines the cell to be used by the OrderTableView\
 
 ## Extra Feature
 
