@@ -14,7 +14,7 @@ Simple CoffeeShop app for ordering drinks from the menu.
 \
 **OrderTableView** - Shows history of all orders placed, implemented as TableViewController\
 \
-**CardCell** - Defines the cell to be used by the OrderTableView\
+**CardCell** - Defines the cell to be used by the OrderTableView
 
 ## Extra Feature
 
